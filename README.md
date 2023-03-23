@@ -15,6 +15,7 @@
 Install Indie Community with npm
 
 ```bash
+  git clone https://github.com/AssisCabron/Indie-Community.git
   npm install
   node index.js
 ```
@@ -24,9 +25,8 @@ Install Indie Community with npm
 ENV File
 
 ```bash
-  
-  CLIENT_ID=954728885789024437
-  CLIENT_SECRET=59U5th4ecS1ZUi2RtBbBCPraizJ3K0Jt
+  CLIENT_ID=
+  CLIENT_SECRET=
 
 ```
 
