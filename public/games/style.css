@@ -1,0 +1,179 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  background-color: #293241;
+  font-family: "Helvetica Neue", sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Header styles */
+header {
+  background-color: #34495e;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container img {
+  height: 48px;
+  margin-right: 8px;
+}
+
+.logo-container h1 {
+  font-size: 2rem;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li:first-child {
+  margin-left: 0;
+}
+
+nav ul li a {
+  font-size: 1.2rem;
+  transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #f1c40f;
+}
+
+/* Main styles */
+#jogos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 50px 0;
+}
+
+.jogo {
+  width: 300px;
+  margin-bottom: 50px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 10px;
+  text-align: center;
+  background-color: #fff;
+  color: #333;
+  transition: all 0.3s ease-in-out;
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8),
+               0px 0px 10px rgba(255, 255, 255, 0.6),
+               0px 0px 12px rgba(255, 255, 255, 0.4),
+               0px 0px 14px rgba(255, 255, 255, 0.2);
+}
+
+.jogo:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+  text-shadow: 0px 0px 8px rgba(255, 255, 255, 0.8),
+               0px 0px 10px rgba(255, 255, 255, 0.6),
+               0px 0px 12px rgba(255, 255, 255, 0.4),
+               0px 0px 14px rgba(255, 255, 255, 0.6),
+               0px 0px 16px rgba(255, 255, 255, 0.8);
+}
+
+.jogo img {
+  width: 100%;
+  height: auto;
+}
+
+.jogo h2 {
+  font-size: 1.5rem;
+  margin: 10px 0;
+  color: #333;
+  font-family: inherit;
+}
+
+.jogo p {
+  margin: 10px 0;
+  color: #777;
+  font-size: 1rem;
+}
+
+.btn {
+  background-color: #2ecc71;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: bold;
+  transition: all 0.3s ease-in-out;
+}
+
+#about {
+  background-color: #fff;
+  padding: 50px 0;
+  background-image: url("https://images7.alphacoders.com/624/624954.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #fff;
+}
+
+#about p {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: #fff;
+  margin-bottom: 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+  
+}
+
+#games {
+  padding: 50px 0;
+}
+
+#games h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.games-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.btn:hover {
+  background-color: #27ae60;
+}

@@ -1,0 +1,20 @@
+{
+  "jogos": [
+    {
+      "id": "1",
+      "nome": "Genshin Impact",
+      "imagem": "https://sm.ign.com/ign_br/game/g/genshin-im/genshin-impact_fdq4.jpg",
+      "descricao": "Genshin Impact é um RPG de ação desenvolvido e publicado pela miHoYo. Foi lançado para Android, iOS, PlayStation 4 e Windows em 2020, no PlayStation 5 em 2021 e está programado para ser lançado no Nintendo Switch.",
+      "autor": "AssisCabron",
+      "categoria": "RPG",
+      "link_download": "https://exemplo.com/jogo1.zip"
+    },
+    {
+      "nome": "Meu Segundo Jogo Incrível",
+      "imagem": "https://images-ext-2.discordapp.net/external/zXAXWaIXpGIEKd27KxIPZx5YNV-QqkEjjx8SiuGDwks/%3Fsize%3D2048/https/cdn.discordapp.com/avatars/541348190746574848/2ba59e3595b615df72761664583dc521.png?width=423&height=423",
+      "descricao": "Um outro jogo incrível e viciante!",
+      "autor": "Beltrano de Tal",
+      "link_download": "https://exemplo.com/jogo2.zip"
+    }
+  ]
+}

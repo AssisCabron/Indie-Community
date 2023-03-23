@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Comunidade de Desenvolvedores Indies</title>
+  <link rel="stylesheet" href="/home/style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <img src="https://static.wixstatic.com/media/81268c_6a17c546fc54435090a54e2075e549c4~mv2.png/v1/fill/w_270,h_230,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Archiact%20Final_Arrowhead_TREATED.png" class="logo" style="width: 40px; height: 40px;"></img>
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="/games">Jogos</a></li>
+        <li><a href="#">Eventos</a></li>
+        <li><a href="/auth/discord">Login</a></li>
+
+      </ul>
+    </nav>
+    <div class="header-content" style="margin-top: 50px;">
+      <center><h1>Seja bem-vindo à nossa comunidade!</h1></center>
+      <center><p style="font-size: 1.4em;">Aqui você pode encontrar jogos incríveis desenvolvidos por indies talentosos.</p></center>
+      
+    </div>
+    <a href="https://discord.gg/kc9QWw4mfs" class="discord-button">
+  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQhIqu6PgaHHQm7Rlmgnz2zWBr6aAoLCBJtvWH2RiDf6o9o16DcuuFw4fiYTDCy68476rw&usqp=CAU" alt="Servidor Discord">
+</a>
+
+    <center><a href="/auth/discord" class="btn-3" style="padding: 5px 15px;" id="discord-widget">Cadastre seu jogo</a></center>
+  </header>
+  <main>
+    <h2 style="color:white;">Últimos jogos cadastrados</h2>
+    <div class="game-card">
+      <img src="https://via.placeholder.com/150x150.png?text=Game+1" alt="Game 1">
+      <div class="game-info">
+        <h3 style="color:white;">Nome do jogo</h3>
+        <p style="color:white;">Descrição do jogo.</p>
+        <a href="#" class="btn-2">Jogar</a>
+      </div>
+    </div>
+    <div class="game-card">
+      <div class="game-image">
+    <img src="https://via.placeholder.com/150x150.png?text=Game+2" alt="Game 2">
+        
+  </div>
+      <div class="game-info">
+        <h3 style="color:white;">Nome do jogo</h3>
+        <p style="color:white;">Descrição do jogo.</p>
+        <a href="#" class="btn-2">Jogar</a>
+      </div>
+    </div>
+  </main>
+  <footer>
+    <p>Desenvolvido por AssisCabron & Shadoso &copy; 2023</p>
+  </footer>
+  <script src="script.js"></script>
+
+  <script>
+  function updateGames() {
+    fetch('/data/jogos.json')
+      .then(response => response.json())
+      .then(data => {
+        const games = data.jogos;
+        const gameCards = document.querySelectorAll('.game-card');
+        gameCards.forEach((card, i) => {
+          const game = games[i];
+          const img = card.querySelector('img');
+          const title = card.querySelector('h3');
+          const desc = card.querySelector('p');
+          const playBtn = card.querySelector('.btn');
+          img.src = game.imagem;
+          img.alt = game.nome;
+          title.innerText = game.nome;
+          desc.innerText = game.descricao;
+          playBtn.href = game.link;
+        });
+      })
+      .catch(error => console.error(error));
+  }
+  updateGames();
+  setInterval(updateGames, 30000);
+</script>
+</body>
+</html>
