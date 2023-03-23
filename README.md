@@ -9,7 +9,29 @@
 [DEMO](DEMO)
 
   
+
+## Installation
+
+Install Indie Community with npm
+
+```bash
+  npm install
+  node index.js
+```
+
+## Configuration
+
+ENV File
+
+```bash
   
+  CLIENT_ID=954728885789024437
+  CLIENT_SECRET=59U5th4ecS1ZUi2RtBbBCPraizJ3K0Jt
+
+```
+
+    
+
 <h2>🧐 Features</h2>
 
 Here're some of the project's best features:
